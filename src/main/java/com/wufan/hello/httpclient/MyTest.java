@@ -22,7 +22,7 @@ import java.util.List;
  */
 public class MyTest {
     public static void main(String[] args) {
-
+        get();
     }
     private static void get(){
         //创建httpclient客户端，打开浏览器
@@ -31,7 +31,7 @@ public class MyTest {
         //创建get请求
         HttpGet httpGet = new HttpGet("http://localhost:8082/user/page?draw=1&start=0&length=10");
         httpGet.setHeader("Connection", "keep-alive");
-        httpGet.setHeader("Cookie", "JSESSIONID=38F5C62EB6A34435BE210960670BC6CB");
+        httpGet.setHeader("Cookie", "JSESSIONID=33BAB1EF56B681F0EF90CD93D0430391");
         httpGet.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36");
 
         //发送请求，回车
